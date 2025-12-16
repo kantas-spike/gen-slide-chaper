@@ -12,7 +12,7 @@ def get_script_path_for_blender():
 
 def parse_args(args=None) -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser(add_help=False)
-    DEFAULT_BLENDER_PATH = "/usr/local/bin/blender"
+    DEFAULT_BLENDER_PATH = "/opt/homebrew/bin/blender"
     parser.add_argument(
         "--blender",
         default=DEFAULT_BLENDER_PATH,
